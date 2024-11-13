@@ -1,0 +1,6 @@
+xrandr --newmode "7680x1440_60.00"  936.75  7680 8240 9072 10464  1440 1443 1453 1493 -hsync +vsync
+sudo modprobe evdi initial_device_count=1
+read -t -p 'creating virtual monitor... please wait...'
+xrandr --setprovideroutputsource 1 0
+xrandr --addmode DVI-I-2-1 7680x1440_60.00
+xrandr --output DVI-I-2-1 --mode 7680x1440_60.00 --pos 0x1440 --primary
