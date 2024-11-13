@@ -60,7 +60,7 @@ So let's just go for the installation process.
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/AppData/Local$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/AppData/Local/Frontier\ Developments`
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/Saved Games$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Saved\ Games/Frontier\ Developments`
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/kepas/Pictures$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Pictures/Frontier\ Developments`
-25. Rund ED and start MDF Cougar.   
+25. Run ED and start MDF Cougar.   
 
 
 
