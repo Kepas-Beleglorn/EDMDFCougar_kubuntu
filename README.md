@@ -1,3 +1,5 @@
+# WORK IN PROGRESS
+
 # How to run ED MDFCougar on kubuntu (24.04.1 LTS)
 
 ## Preamble
@@ -53,21 +55,12 @@ So let's just go for the installation process.
 20. You can change the name for the shortcut if you want to.</br>![image](https://github.com/user-attachments/assets/5fa32e1f-1b0d-42da-a7d1-009483c318f8)
 21. After this step select `I don't wat to make another shortcut`. For now, that is.</br>![image](https://github.com/user-attachments/assets/37f5a1d0-a0c6-4787-9e8a-2444127ed6a4)
 22. Now you have a shortcut for your `MDFCougar`</br>![image](https://github.com/user-attachments/assets/7cdb0781-399f-43c0-aa90-1e42cda757ee)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+23. Now select the new shortcut and click `Run`. MDFCougar should start after a few seconds. On ~~first~~ start you'll get a message about missing Explorer database. We'll cope with that ~~in a moment~~ hopefully.</br>![image](https://github.com/user-attachments/assets/8df8b836-3c16-4809-85c3-e4801826b56e)
+24. As Elite Dangerous is running within a different wine-prefix we have to adjust the paths where to get the data from the game. I'll do it via `symlinks`. Always cd into the target directory of your MDFCougar installation first!</br>
+    - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/AppData/Local$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/AppData/Local/Frontier\ Developments`
+    - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/Saved Games$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Saved\ Games/Frontier\ Developments`
+    - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/kepas/Pictures$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Pictures/Frontier\ Developments`
+25. Rund ED and start MDF Cougar.   
 
 
 
