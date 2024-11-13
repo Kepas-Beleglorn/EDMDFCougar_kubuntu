@@ -18,7 +18,8 @@ For me, the by far greatest obstacle has been to get Elite Dangerous running on 
 10. Hide the window title of the wine window.
 11. Have fun!
 
-I had to force the use of my RTX 3080 by manipulating EDs configuration file, otherwise it was locked to the RTX 3060. Another issue I still have to solve is, that the virtual display gets lost whenever the display manager is being restartet, e.g. because I rearranged my displays. At the moment i ha
+I had to force the use of my RTX 3080 by manipulating EDs configuration file, otherwise it was locked to the RTX 3060. Another issue I still have to solve is, that the virtual display gets lost whenever the display manager is being restartet, e.g. because I rearranged my displays.
+
 Helpful sources:
 * [Configure WINE](https://www.reddit.com/r/SteamPlay/comments/aikukh/howto_doubletriple_monitor_setup_in_games_that/?rdt=36459)
 * [Setup virtual display](https://unix.stackexchange.com/questions/585069/unable-to-add-a-virtual-display-to-xorg/585078#585078)
@@ -35,7 +36,7 @@ I won't do a deep-dive into the theory and background of wine, as there are many
 
 So let's just go for the installation process.
 1. Install `PlayOnLinux` via "Discover" or `sudo apt install playonlinux`
-2. Download the [most recent release](http://cougardisplay.site/downloadfiles.html) and extract it's content somewhere you'll find it easily when you need it.
+2. Download the [most recent release of ED:MDFCougar](http://cougardisplay.site/downloadfiles.html) and extract it's content somewhere you'll find it easily when you need it.
 3. Run `PlayOnLinux` and select "Install"</br>![image](https://github.com/user-attachments/assets/6358cc4d-72e6-496d-a54b-59cde1a2df3f)
 4. Select "Install a non-listed program"</br>![image](https://github.com/user-attachments/assets/0f4889a4-44ba-428a-8bf5-03f22469bc2b)
 5. Go through the process via the "Next" button until you're prompted for some input.
@@ -59,7 +60,7 @@ So let's just go for the installation process.
 24. As Elite Dangerous is running within a different wine-prefix we have to adjust the paths where to get the data from the game. I'll do it via `symlinks`. Always cd into the target directory of your MDFCougar installation first!</br>
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/AppData/Local$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/AppData/Local/Frontier\ Developments`
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/Saved Games$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Saved\ Games/Frontier\ Developments`
-    - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/kepas/Pictures$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Pictures/Frontier\ Developments`
+    - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/Pictures$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Pictures/Frontier\ Developments`
 25. Run ED and start MDF Cougar.   
 
 
