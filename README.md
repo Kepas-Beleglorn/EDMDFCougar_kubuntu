@@ -43,7 +43,7 @@ So let's just go for the installation process.
 6. The first choice is `install a program in a new virtual drive`. This is essential at this point!</br>![image](https://github.com/user-attachments/assets/21f7409a-d6f1-4742-bef2-e7417756388c)
 7. Give it a proper name. As I'm going to add more tools, like EDMC, to this wine-prefix, I call it `ED Tools`</br>![image](https://github.com/user-attachments/assets/938871e9-3096-4493-89a9-a248d082df5b)
 8. Now set the name of the directory without spaces.</br>![image](https://github.com/user-attachments/assets/65b932fc-cb89-411c-9653-eecc00bc49c3)
-10. Here leave everything unchecked! Yes, I know whe need the `AccessDatabaseEngine_X64.exe` I'll come to that in a minute.</br>![image](https://github.com/user-attachments/assets/3b6710de-3f0c-47f3-a3d6-835ec5099255)
+10. As we need the `AccessDatabaseEngine_X64.exe` check `Install some libraries`.</br>![image](https://github.com/user-attachments/assets/9ba92515-caf3-4c25-a366-b512d9e18f9e)
 11. Select the 64bit variant.</br>![image](https://github.com/user-attachments/assets/9b921d78-4e48-4cb3-a958-3b398c5681d4)
 12. **Now** we're going to install the above mentioned libraries. This step is used to trick `PlayOnLinux` into performing an installation for an actual application.</br>![image](https://github.com/user-attachments/assets/16e700eb-d27e-49cc-b56b-4d4bd88c3d35)
 13. Select the `AccessDatabaseEngine_X64.exe` and after that click `Next`</br>![image](https://github.com/user-attachments/assets/e058b6f6-aa3e-451a-9cd0-4998d481bf8d)
