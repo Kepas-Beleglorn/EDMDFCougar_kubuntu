@@ -45,23 +45,25 @@ So let's just go for the installation process.
 8. Now set the name of the directory without spaces.</br>![image](https://github.com/user-attachments/assets/65b932fc-cb89-411c-9653-eecc00bc49c3)
 10. As we need the `AccessDatabaseEngine_X64.exe` check `Install some libraries`.</br>![image](https://github.com/user-attachments/assets/9ba92515-caf3-4c25-a366-b512d9e18f9e)
 11. Select the 64bit variant.</br>![image](https://github.com/user-attachments/assets/9b921d78-4e48-4cb3-a958-3b398c5681d4)
-12. **Now** we're going to install the above mentioned libraries. This step is used to trick `PlayOnLinux` into performing an installation for an actual application.</br>![image](https://github.com/user-attachments/assets/16e700eb-d27e-49cc-b56b-4d4bd88c3d35)
-13. Select the `AccessDatabaseEngine_X64.exe` and after that click `Next`</br>![image](https://github.com/user-attachments/assets/e058b6f6-aa3e-451a-9cd0-4998d481bf8d)
-14. The regular setup processs like in Windows will be started.</br>![image](https://github.com/user-attachments/assets/47cd2c67-dc20-4310-9404-f9e26f5d2754)
-15. Just click `Next` until finished.</br>![image](https://github.com/user-attachments/assets/eb43b5e0-a12b-4055-8ae0-fe7d6dd7567a)
-16. And yes, you leave the windows path as it is!</br>![image](https://github.com/user-attachments/assets/272aa812-4f0c-4494-a5b7-835ebd340209)
-17. Now you copy the `MDFCougar`directory and it's contents to the newly created wine environment. In my case that's `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/Program Files`</br>![image](https://github.com/user-attachments/assets/d83a5a27-f6ce-4e7e-b09b-a1efc643a1ae)
-18. Back in `PlayOnLinux` you select `Browse`</br>![image](https://github.com/user-attachments/assets/3cbef620-20e4-4ac3-a866-cc7fa895540b)
-19. Look for the `MDFCougar.exe` and select it.</br>![image](https://github.com/user-attachments/assets/a47b653a-fdef-41dc-876f-a94693dab029)
-20. You can change the name for the shortcut if you want to.</br>![image](https://github.com/user-attachments/assets/5fa32e1f-1b0d-42da-a7d1-009483c318f8)
-21. After this step select `I don't wat to make another shortcut`. For now, that is.</br>![image](https://github.com/user-attachments/assets/37f5a1d0-a0c6-4787-9e8a-2444127ed6a4)
-22. Now you have a shortcut for your `MDFCougar`</br>![image](https://github.com/user-attachments/assets/7cdb0781-399f-43c0-aa90-1e42cda757ee)
-23. Now select the new shortcut and click `Run`. MDFCougar should start after a few seconds. On ~~first~~ start you'll get a message about missing Explorer database. We'll cope with that ~~in a moment~~ hopefully.</br>![image](https://github.com/user-attachments/assets/8df8b836-3c16-4809-85c3-e4801826b56e)
-24. As Elite Dangerous is running within a different wine-prefix we have to adjust the paths where to get the data from the game. I'll do it via `symlinks`. Always cd into the target directory of your MDFCougar installation first!</br>
+12. .NET480</br>![image](https://github.com/user-attachments/assets/79d875b0-c8ff-49db-b354-1cc19ba8060d)
+
+13. **Now** we're going to install the above mentioned libraries. This step is used to trick `PlayOnLinux` into performing an installation for an actual application.</br>![image](https://github.com/user-attachments/assets/16e700eb-d27e-49cc-b56b-4d4bd88c3d35)
+14. Select the `AccessDatabaseEngine_X64.exe` and after that click `Next`</br>![image](https://github.com/user-attachments/assets/e058b6f6-aa3e-451a-9cd0-4998d481bf8d)
+15. The regular setup processs like in Windows will be started.</br>![image](https://github.com/user-attachments/assets/47cd2c67-dc20-4310-9404-f9e26f5d2754)
+16. Just click `Next` until finished.</br>![image](https://github.com/user-attachments/assets/eb43b5e0-a12b-4055-8ae0-fe7d6dd7567a)
+17. And yes, you leave the windows path as it is!</br>![image](https://github.com/user-attachments/assets/272aa812-4f0c-4494-a5b7-835ebd340209)
+18. Now you copy the `MDFCougar`directory and it's contents to the newly created wine environment. In my case that's `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/Program Files`</br>![image](https://github.com/user-attachments/assets/d83a5a27-f6ce-4e7e-b09b-a1efc643a1ae)
+19. Back in `PlayOnLinux` you select `Browse`</br>![image](https://github.com/user-attachments/assets/3cbef620-20e4-4ac3-a866-cc7fa895540b)
+20. Look for the `MDFCougar.exe` and select it.</br>![image](https://github.com/user-attachments/assets/a47b653a-fdef-41dc-876f-a94693dab029)
+21. You can change the name for the shortcut if you want to.</br>![image](https://github.com/user-attachments/assets/5fa32e1f-1b0d-42da-a7d1-009483c318f8)
+22. After this step select `I don't wat to make another shortcut`. For now, that is.</br>![image](https://github.com/user-attachments/assets/37f5a1d0-a0c6-4787-9e8a-2444127ed6a4)
+23. Now you have a shortcut for your `MDFCougar`</br>![image](https://github.com/user-attachments/assets/7cdb0781-399f-43c0-aa90-1e42cda757ee)
+24. Now select the new shortcut and click `Run`. MDFCougar should start after a few seconds. On ~~first~~ start you'll get a message about missing Explorer database. We'll cope with that ~~in a moment~~ hopefully.</br>![image](https://github.com/user-attachments/assets/8df8b836-3c16-4809-85c3-e4801826b56e)
+25. As Elite Dangerous is running within a different wine-prefix we have to adjust the paths where to get the data from the game. I'll do it via `symlinks`. Always cd into the target directory of your MDFCougar installation first!</br>
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/AppData/Local$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/AppData/Local/Frontier\ Developments`
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/Saved Games$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Saved\ Games/Frontier\ Developments`
     - `~/.PlayOnLinux/wineprefix/ed_tools/drive_c/users/{user}/Pictures$ ln -s ~/.steam/debian-installation/steamapps/compatdata/359320/pfx/drive_c/users/steamuser/Pictures/Frontier\ Developments`
-25. Run ED and start MDF Cougar.   
+26. Run ED and start MDF Cougar.   
 
 
 
